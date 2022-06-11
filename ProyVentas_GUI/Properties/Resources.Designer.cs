@@ -523,6 +523,16 @@ namespace ProyVentas_GUI.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap indicator1 {
+            get {
+                object obj = ResourceManager.GetObject("indicator1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Laser_Printer {
             get {
                 object obj = ResourceManager.GetObject("Laser_Printer", resourceCulture);

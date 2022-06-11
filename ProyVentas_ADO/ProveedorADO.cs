@@ -14,7 +14,7 @@ namespace ProyVentas_ADO
         SqlConnection cnx = new SqlConnection();
         SqlCommand cmd = new SqlCommand();
         SqlDataReader dtr;
-          
+           
         
         // Metodos de mantenimiento
         public Boolean InsertarProveedor(ProveedorBE objProveedorBE)

@@ -1,0 +1,426 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B42AB14F-FFF4-4A55-A255-C36FF53F13BB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ProyVentas_GUI</RootNamespace>
+    <AssemblyName>ProyVentas_GUI</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CategoriaMan01.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CategoriaMan01.designer.cs">
+      <DependentUpon>CategoriaMan01.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CategoriaMan02.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CategoriaMan02.designer.cs">
+      <DependentUpon>CategoriaMan02.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CategoriaMan03.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CategoriaMan03.designer.cs">
+      <DependentUpon>CategoriaMan03.cs</DependentUpon>
+    </Compile>
+    <Compile Include="clsCredenciales.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MDIPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MDIPrincipal.Designer.cs">
+      <DependentUpon>MDIPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ProveedorMan01.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProveedorMan01.designer.cs">
+      <DependentUpon>ProveedorMan01.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProveedorMan02.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProveedorMan02.designer.cs">
+      <DependentUpon>ProveedorMan02.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProveedorMan03.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProveedorMan03.designer.cs">
+      <DependentUpon>ProveedorMan03.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VendedorMan01.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VendedorMan01.designer.cs">
+      <DependentUpon>VendedorMan01.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VendedorMan02.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VendedorMan02.designer.cs">
+      <DependentUpon>VendedorMan02.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VendedorMan03.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VendedorMan03.designer.cs">
+      <DependentUpon>VendedorMan03.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="CategoriaMan01.resx">
+      <DependentUpon>CategoriaMan01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CategoriaMan02.resx">
+      <DependentUpon>CategoriaMan02.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CategoriaMan03.resx">
+      <DependentUpon>CategoriaMan03.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDIPrincipal.resx">
+      <DependentUpon>MDIPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="ProveedorMan01.resx">
+      <DependentUpon>ProveedorMan01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProveedorMan02.resx">
+      <DependentUpon>ProveedorMan02.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProveedorMan03.resx">
+      <DependentUpon>ProveedorMan03.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VendedorMan01.resx">
+      <DependentUpon>VendedorMan01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VendedorMan02.resx">
+      <DependentUpon>VendedorMan02.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VendedorMan03.resx">
+      <DependentUpon>VendedorMan03.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ProyVentas_BE\ProyVentas_BE.csproj">
+      <Project>{9741decb-f48f-4ffc-ab88-0713efdf3bcf}</Project>
+      <Name>ProyVentas_BE</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ProyVentas_BL\ProyVentas_BL.csproj">
+      <Project>{b87665dc-1678-4427-a4a9-3e297da7c4ff}</Project>
+      <Name>ProyVentas_BL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Accessibility.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Aceptar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Agregar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\book_blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Buscar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cabinet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Calc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calculator.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\auto_6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\auto_7.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\auto_8.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\column with contents_image001.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Accessibility1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Aceptar1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Agregar1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\book_blue1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Buscar1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cabinet1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Calc1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calculator1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cancelar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Control_Panel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Display1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Display2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\doctor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\document_attachment.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\document_certificate.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\document_dirty.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\document_lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dude4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Editar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Eliminar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Files_Download.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\form_blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\form_green.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\form_red.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\form_yellow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Games1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Guardar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GuardarVarios.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hat_gray.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Home2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\id_card.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imprimir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Laser_Printer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Listado.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\money.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\moneybag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\note.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\note_new.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Nuevo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Package.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pagina_Horizontal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Printer_Blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Quitar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RefreshCL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\report.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Security_Firewall_OFF.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Shutdown_32x32-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\star_blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\star_green.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\star_grey.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\star_red.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\star_yellow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user1_back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user1_new.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user1_preferences.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user1_time.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\users_back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\users1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\users2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\users3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\users4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Usuario.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Windows_24x24-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\auto_71.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

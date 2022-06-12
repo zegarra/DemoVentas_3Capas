@@ -79,7 +79,7 @@ namespace ProyVentas_GUI
         private void MDIPrincipal_FormClosing(object sender, FormClosingEventArgs e)
         {
             DialogResult vrpta;
-            vrpta = MessageBox.Show("¿sefuro de salir del sistema?", "Confirmar", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            vrpta = MessageBox.Show("¿seguro de salir del sistema?", "Confirmar", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if(vrpta == DialogResult.No)
             {
                 e.Cancel = true;
@@ -90,6 +90,13 @@ namespace ProyVentas_GUI
         {
             //salimos de la aplicacion al cerrar el MDI
             Application.Exit();
+        }
+
+        private void listadosExcelToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmListasProveedor obj1 = new frmListasProveedor();
+            obj1.MdiParent = this;
+            obj1.Show();
         }
     }
 }

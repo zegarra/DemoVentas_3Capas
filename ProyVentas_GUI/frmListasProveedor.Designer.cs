@@ -34,8 +34,8 @@ namespace ProyVentas_GUI
             this.lblMensaje = new System.Windows.Forms.Label();
             this.bkgDatos = new System.ComponentModel.BackgroundWorker();
             this.prgBar = new System.Windows.Forms.ProgressBar();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.pcbImagen = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbImagen)).BeginInit();
             this.SuspendLayout();
             // 
             // btnListarProveedores
@@ -78,14 +78,14 @@ namespace ProyVentas_GUI
             this.prgBar.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
             this.prgBar.TabIndex = 4;
             // 
-            // pictureBox1
+            // pcbImagen
             // 
-            this.pictureBox1.Image = global::ProyVentas_GUI.Properties.Resources.indicator;
-            this.pictureBox1.Location = new System.Drawing.Point(150, 154);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(20, 20);
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
+            this.pcbImagen.Image = global::ProyVentas_GUI.Properties.Resources.indicator;
+            this.pcbImagen.Location = new System.Drawing.Point(150, 154);
+            this.pcbImagen.Name = "pcbImagen";
+            this.pcbImagen.Size = new System.Drawing.Size(20, 20);
+            this.pcbImagen.TabIndex = 2;
+            this.pcbImagen.TabStop = false;
             // 
             // frmListasProveedor
             // 
@@ -94,7 +94,7 @@ namespace ProyVentas_GUI
             this.ClientSize = new System.Drawing.Size(428, 224);
             this.Controls.Add(this.prgBar);
             this.Controls.Add(this.lblMensaje);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.pcbImagen);
             this.Controls.Add(this.btnListarFacturas);
             this.Controls.Add(this.btnListarProveedores);
             this.MaximizeBox = false;
@@ -102,7 +102,7 @@ namespace ProyVentas_GUI
             this.Name = "frmListasProveedor";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmListasProveedor";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbImagen)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -112,7 +112,7 @@ namespace ProyVentas_GUI
 
         private System.Windows.Forms.Button btnListarProveedores;
         private System.Windows.Forms.Button btnListarFacturas;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pcbImagen;
         private System.Windows.Forms.Label lblMensaje;
         private System.ComponentModel.BackgroundWorker bkgDatos;
         private System.Windows.Forms.ProgressBar prgBar;

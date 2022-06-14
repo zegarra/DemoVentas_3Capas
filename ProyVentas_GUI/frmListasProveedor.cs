@@ -74,7 +74,7 @@ namespace ProyVentas_GUI
                     String filename = "ListadoProveedores_" + clsCredenciales.Usuario + ".xlsx";
 
                     //Gravamos el archivo construido...
-                    FileStream fs = new FileStream(@"D:\Carpetas_Software\DesarrolloApliEm (LEON)\MisExcel" + filename, FileMode.Create);
+                    FileStream fs = new FileStream(@"D:\Carpetas_Software\DesarrolloApliEm (LEON)\MisExcel\" + filename, FileMode.Create);
                     pck.SaveAs(fs);
 
                     //Eliminamos las instancias.....

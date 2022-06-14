@@ -38,10 +38,12 @@ namespace ProyVentas_GUI
             this.consultasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.facturacionDelClienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.listadosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.listadosExcelToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.lblUsuario = new System.Windows.Forms.ToolStripStatusLabel();
-            this.listadosExcelToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.listadosXMLToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.listadosGraficosEstadisticosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -113,11 +115,21 @@ namespace ProyVentas_GUI
             // listadosToolStripMenuItem
             // 
             this.listadosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.listadosExcelToolStripMenuItem});
+            this.listadosExcelToolStripMenuItem,
+            this.listadosXMLToolStripMenuItem,
+            this.listadosGraficosEstadisticosToolStripMenuItem});
             this.listadosToolStripMenuItem.Image = global::ProyVentas_GUI.Properties.Resources.calculator;
             this.listadosToolStripMenuItem.Name = "listadosToolStripMenuItem";
             this.listadosToolStripMenuItem.Size = new System.Drawing.Size(78, 20);
             this.listadosToolStripMenuItem.Text = "Listados";
+            // 
+            // listadosExcelToolStripMenuItem
+            // 
+            this.listadosExcelToolStripMenuItem.Image = global::ProyVentas_GUI.Properties.Resources.cabinet;
+            this.listadosExcelToolStripMenuItem.Name = "listadosExcelToolStripMenuItem";
+            this.listadosExcelToolStripMenuItem.Size = new System.Drawing.Size(227, 22);
+            this.listadosExcelToolStripMenuItem.Text = "Listados Excel";
+            this.listadosExcelToolStripMenuItem.Click += new System.EventHandler(this.listadosExcelToolStripMenuItem_Click);
             // 
             // salirToolStripMenuItem
             // 
@@ -144,13 +156,19 @@ namespace ProyVentas_GUI
             this.lblUsuario.Size = new System.Drawing.Size(16, 17);
             this.lblUsuario.Text = "...";
             // 
-            // listadosExcelToolStripMenuItem
+            // listadosXMLToolStripMenuItem
             // 
-            this.listadosExcelToolStripMenuItem.Image = global::ProyVentas_GUI.Properties.Resources.cabinet;
-            this.listadosExcelToolStripMenuItem.Name = "listadosExcelToolStripMenuItem";
-            this.listadosExcelToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.listadosExcelToolStripMenuItem.Text = "Listados Excel";
-            this.listadosExcelToolStripMenuItem.Click += new System.EventHandler(this.listadosExcelToolStripMenuItem_Click);
+            this.listadosXMLToolStripMenuItem.Image = global::ProyVentas_GUI.Properties.Resources.document_certificate;
+            this.listadosXMLToolStripMenuItem.Name = "listadosXMLToolStripMenuItem";
+            this.listadosXMLToolStripMenuItem.Size = new System.Drawing.Size(227, 22);
+            this.listadosXMLToolStripMenuItem.Text = "Listados XML";
+            // 
+            // listadosGraficosEstadisticosToolStripMenuItem
+            // 
+            this.listadosGraficosEstadisticosToolStripMenuItem.Image = global::ProyVentas_GUI.Properties.Resources.report;
+            this.listadosGraficosEstadisticosToolStripMenuItem.Name = "listadosGraficosEstadisticosToolStripMenuItem";
+            this.listadosGraficosEstadisticosToolStripMenuItem.Size = new System.Drawing.Size(227, 22);
+            this.listadosGraficosEstadisticosToolStripMenuItem.Text = "Listados Graficos Estadisticos";
             // 
             // MDIPrincipal
             // 
@@ -193,5 +211,7 @@ namespace ProyVentas_GUI
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.ToolStripStatusLabel lblUsuario;
         private System.Windows.Forms.ToolStripMenuItem listadosExcelToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem listadosXMLToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem listadosGraficosEstadisticosToolStripMenuItem;
     }
 }
